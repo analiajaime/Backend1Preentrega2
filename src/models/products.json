@@ -1,0 +1,211 @@
+[
+    {
+        "id": 1,
+        "title": "Collar para perro",
+        "description": "Collar ajustable para perro de diferentes tamaños.",
+        "category": "accesorios",
+        "price": 19.99,
+        "thumbnail": "foto01.jpeg",
+        "code": "CODE1",
+        "stock": 50,
+        "status": true
+    },
+    {
+        "id": 2,
+        "title": "Rascador para gatos",
+        "description": "Rascador de tres niveles para gatos.",
+        "category": "accesorios",
+        "price": 45.99,
+        "thumbnail": "foto02.jpg",
+        "code": "CODE2",
+        "stock": 30,
+        "status": true
+    },
+    {
+        "id": 3,
+        "title": "Comida para perro - Adulto",
+        "description": "Bolsa de 10kg de comida premium para perros adultos.",
+        "category": "alimentos",
+        "price": 59.99,
+        "thumbnail": "foto03.jpeg",
+        "code": "CODE3",
+        "stock": 100,
+        "status": true
+    },
+    {
+        "id": 4,
+        "title": "Comida para gato - Adulto",
+        "description": "Bolsa de 5kg de comida premium para gatos adultos.",
+        "category": "alimentos",
+        "price": 39.99,
+        "thumbnail": "foto04.jpg",
+        "code": "CODE4",
+        "stock": 80,
+        "status": true
+    },
+    {
+        "id": 5,
+        "title": "Cama para perro",
+        "description": "Cama acolchonada y lavable para perros medianos.",
+        "category": "accesorios",
+        "price": 49.99,
+        "thumbnail": "foto05.jpg",
+        "code": "CODE5",
+        "stock": 40,
+        "status": true
+    },
+    {
+        "id": 6,
+        "title": "Juguete para gatos - ratón",
+        "description": "Juguete de peluche en forma de ratón para gatos.",
+        "category": "juguetes",
+        "price": 9.99,
+        "thumbnail": "foto06.jpg",
+        "code": "CODE6",
+        "stock": 150,
+        "status": true
+    },
+    {
+        "id": 7,
+        "title": "Jaula para hámster",
+        "description": "Jaula con dos niveles y ruedas para hámster.",
+        "category": "accesorios",
+        "price": 79.99,
+        "thumbnail": "foto07.jpg",
+        "code": "CODE7",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 8,
+        "title": "Arenero para gatos",
+        "description": "Arenero grande y cubierto para gatos.",
+        "category": "accesorios",
+        "price": 29.99,
+        "thumbnail": "foto08.jpg",
+        "code": "CODE8",
+        "stock": 70,
+        "status": true
+    },
+    {
+        "id": 9,
+        "title": "Arena para gatos",
+        "description": "Arena absorbente de 10kg para gatos.",
+        "category": "alimentos",
+        "price": 14.99,
+        "thumbnail": "foto09.jpg",
+        "code": "CODE9",
+        "stock": 200,
+        "status": true
+    },
+    {
+        "id": 10,
+        "title": "Cepillo para perros",
+        "description": "Cepillo de cerdas suaves para perros de pelo largo.",
+        "category": "accesorios",
+        "price": 15.99,
+        "thumbnail": "foto10.jpg",
+        "code": "CODE10",
+        "stock": 60,
+        "status": true
+    },
+    {
+        "id": 11,
+        "title": "Snacks para perros",
+        "description": "Paquete de snacks sabor carne para perros.",
+        "category": "alimentos",
+        "price": 9.99,
+        "thumbnail": "foto11.jpeg",
+        "code": "CODE11",
+        "stock": 150,
+        "status": true
+    },
+    {
+        "id": 12,
+        "title": "Cama para gatos",
+        "description": "Cama suave y cómoda para gatos de todos los tamaños.",
+        "category": "accesorios",
+        "price": 34.99,
+        "thumbnail": "foto12.jpg",
+        "code": "CODE12",
+        "stock": 40,
+        "status": true
+    },
+    {
+        "id": 13,
+        "title": "Transportadora para perros",
+        "description": "Transportadora de tamaño mediano para perros.",
+        "category": "accesorios",
+        "price": 89.99,
+        "thumbnail": "foto13.jpg",
+        "code": "CODE13",
+        "stock": 15,
+        "status": true
+    },
+    {
+        "id": 14,
+        "title": "Correa extensible para perros",
+        "description": "Correa extensible de 5 metros para perros medianos.",
+        "category": "accesorios",
+        "price": 25.99,
+        "thumbnail": "foto14.jpeg",
+        "code": "CODE14",
+        "stock": 100,
+        "status": true
+    },
+    {
+        "id": 15,
+        "title": "Pecera de 10 litros",
+        "description": "Pecera de vidrio con capacidad de 10 litros.",
+        "category": "accesorios",
+        "price": 49.99,
+        "thumbnail": "foto15.jpg",
+        "code": "CODE15",
+        "stock": 10,
+        "status": true
+    },
+    {
+        "id": 16,
+        "title": "Filtro para pecera",
+        "description": "Filtro silencioso para peceras de hasta 20 litros.",
+        "category": "accesorios",
+        "price": 29.99,
+        "thumbnail": "foto16.jpg",
+        "code": "CODE16",
+        "stock": 25,
+        "status": true
+    },
+    {
+        "id": 17,
+        "title": "Jaula para pájaros",
+        "description": "Jaula espaciosa con columpios para pájaros pequeños.",
+        "category": "accesorios",
+        "price": 69.99,
+        "thumbnail": "foto17.jpg",
+        "code": "CODE17",
+        "stock": 18,
+        "status": true
+    },
+    {
+        "id": 18,
+        "title": "Comedero automático para gatos",
+        "description": "Comedero automático programable para gatos.",
+        "category": "accesorios",
+        "price": 99.99,
+        "thumbnail": "foto18.jpg",
+        "code": "CODE18",
+        "stock": 50,
+        "status": true
+    },
+    {
+        "id": 19,
+        "title": "Juguete interactivo para perros",
+        "description": "Juguete interactivo que dispensa golosinas para perros.",
+        "category": "juguetes",
+        "price": 24.99,
+        "thumbnail": "foto19.jpeg",
+        "code": "CODE19",
+        "stock": 75,
+        "status": true
+    }
+]
