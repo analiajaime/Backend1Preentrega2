@@ -1,31 +1,31 @@
 /** -------------------- Varibales -------------------- **/
 
 :root {
-    --clr-main: #f8f4f4;
-    --clr-sec: #797575;
+    --clr-main: #f0f8ff; /* Azul Alice */
+    --clr-sec: #a6c9e2; /* Azul claro pastel */
 
     --clr-white: #ffffff;
     --clr-black: #000000;
     --clr-red: #db1919;
     --clr-orange: #f56900;
     --clr-green: #00d959;
-    --clr-blue: #007BFF;
-    --clr-grey: #757579;
+    --clr-blue: #89c5ff; /* Azul suave */
+    --clr-grey: #d1e7f5; /* Gris azulado suave */
 
     --clr-font: #000000;
-    --clr-header: #f8f4f49f;
+    --clr-header: #e6f2fa; /* Azul muy suave */
     --clr-header-font: #000000b3;
     --clr-header-notification: #ffffff;
-    --clr-header-scrolled: #f8f4f49f;
+    --clr-header-scrolled: #e6f2fa;
     --clr-header-scrolled-border: #cececf;
     --clr-navbar-promos: #ffffff;
     --clr-product-card: #ffffff;
     --clr-form-input: #ffffff;
-    --clr-form-input-border: #86868b;
-    --clr-form-input-btn: #000000;
+    --clr-form-input-border: #b0d0e7;
+    --clr-form-input-btn: #89c5ff;
     --clr-form-modal: #f7f7f7;
     --clr-form-modal-buttons-border: #d2d2d7;
-    --clr-footer: #f8f4f4;
+    --clr-footer: #f0f8ff; /* Azul Alice */
     --clr-footer-text:  #0000008f;
     --clr-footer-border-bottom: #00000029;
     --clr-footer-legalYCountry: #000000e0;
@@ -55,6 +55,7 @@
     --clr-footer-legalYCountry: #A1A1A6;
     --clr-footer-legal-border-right: #424245;
 }
+
 
 /** -------------------- Fonts -------------------- **/
 
