@@ -16,7 +16,7 @@
         "description": "Rascador de tres niveles para gatos.",
         "category": "accesorios",
         "price": 45.99,
-        "thumbnail": "foto02.jpg",
+        "thumbnail": "foto02.jpeg",
         "code": "CODE2",
         "stock": 30,
         "status": true
@@ -38,7 +38,7 @@
         "description": "Bolsa de 5kg de comida premium para gatos adultos.",
         "category": "alimentos",
         "price": 39.99,
-        "thumbnail": "foto04.jpg",
+        "thumbnail": "foto04.jpeg",
         "code": "CODE4",
         "stock": 80,
         "status": true
@@ -49,7 +49,7 @@
         "description": "Cama acolchonada y lavable para perros medianos.",
         "category": "accesorios",
         "price": 49.99,
-        "thumbnail": "foto05.jpg",
+        "thumbnail": "foto05.jpeg",
         "code": "CODE5",
         "stock": 40,
         "status": true
@@ -60,7 +60,7 @@
         "description": "Juguete de peluche en forma de ratón para gatos.",
         "category": "juguetes",
         "price": 9.99,
-        "thumbnail": "foto06.jpg",
+        "thumbnail": "foto06.jpeg",
         "code": "CODE6",
         "stock": 150,
         "status": true
@@ -71,7 +71,7 @@
         "description": "Jaula con dos niveles y ruedas para hámster.",
         "category": "accesorios",
         "price": 79.99,
-        "thumbnail": "foto07.jpg",
+        "thumbnail": "foto07.jpeg",
         "code": "CODE7",
         "stock": 20,
         "status": true
@@ -82,7 +82,7 @@
         "description": "Arenero grande y cubierto para gatos.",
         "category": "accesorios",
         "price": 29.99,
-        "thumbnail": "foto08.jpg",
+        "thumbnail": "foto08.jpeg",
         "code": "CODE8",
         "stock": 70,
         "status": true
@@ -93,7 +93,7 @@
         "description": "Arena absorbente de 10kg para gatos.",
         "category": "alimentos",
         "price": 14.99,
-        "thumbnail": "foto09.jpg",
+        "thumbnail": "foto09.jpeg",
         "code": "CODE9",
         "stock": 200,
         "status": true
@@ -104,7 +104,7 @@
         "description": "Cepillo de cerdas suaves para perros de pelo largo.",
         "category": "accesorios",
         "price": 15.99,
-        "thumbnail": "foto10.jpg",
+        "thumbnail": "foto10.jpeg",
         "code": "CODE10",
         "stock": 60,
         "status": true
@@ -126,7 +126,7 @@
         "description": "Cama suave y cómoda para gatos de todos los tamaños.",
         "category": "accesorios",
         "price": 34.99,
-        "thumbnail": "foto12.jpg",
+        "thumbnail": "foto12.jpeg",
         "code": "CODE12",
         "stock": 40,
         "status": true
@@ -137,7 +137,7 @@
         "description": "Transportadora de tamaño mediano para perros.",
         "category": "accesorios",
         "price": 89.99,
-        "thumbnail": "foto13.jpg",
+        "thumbnail": "foto13.jpeg",
         "code": "CODE13",
         "stock": 15,
         "status": true
@@ -159,7 +159,7 @@
         "description": "Pecera de vidrio con capacidad de 10 litros.",
         "category": "accesorios",
         "price": 49.99,
-        "thumbnail": "foto15.jpg",
+        "thumbnail": "foto15.jpeg",
         "code": "CODE15",
         "stock": 10,
         "status": true
@@ -170,7 +170,7 @@
         "description": "Filtro silencioso para peceras de hasta 20 litros.",
         "category": "accesorios",
         "price": 29.99,
-        "thumbnail": "foto16.jpg",
+        "thumbnail": "foto16.jpeg",
         "code": "CODE16",
         "stock": 25,
         "status": true
@@ -181,7 +181,7 @@
         "description": "Jaula espaciosa con columpios para pájaros pequeños.",
         "category": "accesorios",
         "price": 69.99,
-        "thumbnail": "foto17.jpg",
+        "thumbnail": "foto17.jpeg",
         "code": "CODE17",
         "stock": 18,
         "status": true
@@ -192,7 +192,7 @@
         "description": "Comedero automático programable para gatos.",
         "category": "accesorios",
         "price": 99.99,
-        "thumbnail": "foto18.jpg",
+        "thumbnail": "foto18.jpeg",
         "code": "CODE18",
         "stock": 50,
         "status": true
