@@ -73,8 +73,8 @@
             "two" : "false"
         },
         "text": {
-            "one": "Available",
-            "two": "Not Available"
+            "one": "Disponible",
+            "two": "No Disponible"
         }
     }
 ]

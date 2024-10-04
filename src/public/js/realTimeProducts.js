@@ -4,7 +4,6 @@ socket.on("products", (data) => {
     renderProducts(data)
 })
 
-// Función para renderizar la tabla de productos:
 const renderProducts = (products) => {
     const containerProducts = document.getElementById("container_realTimeProducts")
     containerProducts.innerHTML = ""
@@ -19,34 +18,30 @@ const renderProducts = (products) => {
             <img class="productCard_img" src = "../assets/images/store/${product.thumbnail}" alt="${product.title}"></img>
             <div class="productCard_info">
                 <div class="productCard_info_text">
-                    <h4>From $${parseFloat(product.price).toFixed(2)}</h4>
+                    <h4>Desde $${parseFloat(product.price).toFixed(2)}</h4>
                 </div>
                 <a id="scrollToForm"><button class="productCard_buttonHover" id="btn_update">Update</button></a>
             </div>
             `
         containerProducts.appendChild(productCard)
 
-        // Se agrega el evento para actualizar el producto
+        
         productCard.querySelector("#btn_update").addEventListener("click", () => {
             handleEditProduct(product)
         })
-        // se agrega el evento para que desplace smooth hasta el formulario
+        
         document.querySelectorAll('#scrollToForm').forEach(e => {
             e.addEventListener('click', function (event) {
                 event.preventDefault()
-                // Obtener el elemento al que se quiere desplazar
                 const targetElement = document.querySelector('#scrolledToForm')
-                // Verificar si el header está activo
                 if (isHeaderActive) {
-                    // Calcular la posición actual del targetElement
                     const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY
-                    // Desplazamiento suave hacia el formulario con un offset de -53px
                     window.scrollTo({
                         top: targetPosition + (-53),
                         behavior: 'smooth'
                     })
                 } else {
-                    // Desplazamiento suave hacia el formulario sin ajuste de scroll
+                    
                     targetElement.scrollIntoView({
                         behavior: 'smooth'
                     })
@@ -56,7 +51,6 @@ const renderProducts = (products) => {
     })
 }
 
-// Se traen los datos del array de inputs, para hacer cada input.
 fetch('/jsons/productsForm-inputs.json')
     .then(response => response.json())
     .then(data => {
@@ -89,7 +83,6 @@ fetch('/jsons/productsForm-inputs.json')
     })
     .catch(error => console.error('Error fetching JSON:', error))
 
-// Se le pasa el 'data-value' al id 'status' y agrega/elimina la clase 'active'
 const selectStatus = () => {
     const statusElement = document.getElementById("status")
 
@@ -97,40 +90,32 @@ const selectStatus = () => {
         element.addEventListener("click", () => {
             const value = element.getAttribute('data-value')
 
-            // Elimina la clase 'active' de todos los elementos
+            
             document.querySelectorAll(".statusOption").forEach(el => {
                 el.classList.remove("active")
             })
 
-            // Agrega la clase 'active' al elemento clickeado
             element.classList.add("active")
 
-            // Establece el 'data-value' al elemento con id 'status'
             statusElement.setAttribute("data-value", value)
         })
     })
 }
 
-// Variable para almacenar el producto seleccionado para su edición
 let selectedProduct = null
 
-// Función para manejar la actualización o adheción de un producto
 const handleProductForm = () => {
     if (!selectedProduct) {
-        // Si no hay un producto seleccionado, se agrega uno nuevo
         socket.emit("addProduct", getProductData())
         clearFieldsForm()
     } else {
-        // Si hay un producto seleccionado, se actualiza en lugar de agregar
         socket.emit("updateProduct", { productId: selectedProduct.id, updatedProduct: getProductData() })
         clearFieldsForm()
     }
 
-    // Se limpia el producto seleccionado después de la operación
     selectedProduct = null
 }
 
-// Función para obtener los datos del formulario y enviarlo
 const getProductData = () => {
     const product = {
         title: document.getElementById("title").value,
@@ -145,7 +130,6 @@ const getProductData = () => {
     return product
 }
 
-// Función para cargar los datos del producto seleccionado al formulario
 const loadProductDataForEditing = (product) => {
     document.getElementById("title").value = product.title
     document.getElementById("description").value = product.description
@@ -156,32 +140,25 @@ const loadProductDataForEditing = (product) => {
     document.getElementById("stock").value = product.stock
     document.getElementById("status").setAttribute("data-value", product.status)
 
-    // Se asigna el producto seleccionado
     selectedProduct = product
-    // Se selecciona el status del producto
     handleStatusTrueOrFalse()
-    // Se muestra el boton para eliminar el producto
     handleDeleteBnt()
 }
 
-// Funcion para cargar el status del producto seleccionado al formulario
 const handleStatusTrueOrFalse = () => {
     document.querySelectorAll(".statusOption").forEach(element => {
         const statusElement = document.getElementById("status")
         const statusValue = statusElement.getAttribute("data-value")
         const value = element.getAttribute('data-value')
         if (value === statusValue) {
-            // Se elimina la clase 'active' de todos los elementos
             document.querySelectorAll(".statusOption").forEach(el => {
                 el.classList.remove("active")
             })
-            // Se agrega la clase 'active' al elemento con el mismo 'data-value'
             element.classList.add("active")
         }
     })
 }
 
-// Función para mostrar el boton "delete" cuando un producto está seleccionado
 const handleDeleteBnt = () => {
     const btnDelete = document.querySelector(".container_formBnt-delete")
     const modal = document.querySelector(".container_modal")
@@ -202,13 +179,10 @@ const handleDeleteBnt = () => {
             </div>
         `
 
-        // Agregamos el evento para mostrar el modal (la confirmación del 'delete')
         document.getElementById("btn_delete").addEventListener("click", () => { showModal() })
 
-        // Agregamos el evento para cerrar el modal
         document.getElementById("btnModal_cancel").addEventListener("click", () => { handleModal() })
 
-        // Agregamos el evento para eliminar el producto
         document.getElementById("btnModal_delete").addEventListener("click", () => {
             console.log("product deleted:", selectedProduct)
             deleteProduct(selectedProduct.id)
@@ -222,14 +196,11 @@ const handleDeleteBnt = () => {
     }
 }
 
-// Se presoina el boton "update" del producto
 const handleEditProduct = (product) => {
-    // Se personaliza el comportamiento del formulario
     loadProductDataForEditing(product)
     document.getElementById("form_title").innerText = `Update ${product.title}`
 }
 
-// Se limpian y resetean los campos del formulario
 const clearFieldsForm = () => {
     document.getElementById("form_title").innerText = "Add a product"
     document.getElementById("form_products").reset()
@@ -240,25 +211,20 @@ const clearFieldsForm = () => {
 }
 
 document.getElementById("form_clearBtn").addEventListener("click", clearFieldsForm)
-
-// Se envia el formulario
 document.getElementById("form_submitBtn").addEventListener("click", handleProductForm)
 
-// Función para mostrar el modal (la confirmación del 'delete')
 const showModal = () => {
     document.querySelector(".background_modal").classList.toggle("active")
     document.querySelector(".container_modal").classList.toggle("active")
     document.body.style.overflow = "hidden"
 }
 
-// Función para el boton 'Cancel' del modal - se sierra
 const handleModal = () => {
     document.querySelector(".background_modal").classList.remove("active")
     document.querySelector(".container_modal").classList.remove("active")
     document.body.style.overflow = ""
 }
 
-// Función para el boton 'Delete' del modal - se elimina el producto seleccionado
 const deleteProduct = (id) => {
     document.querySelector(".background_modal").classList.remove("active")
     document.querySelector(".container_modal").classList.remove("active")
