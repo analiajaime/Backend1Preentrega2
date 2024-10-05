@@ -13,7 +13,7 @@ const renderProducts = (products) => {
         productCard.classList.add("productCard")
         // Se renderiza cada card
         productCard.innerHTML = `
-            ${product.status ? '<span class="productCard_available">AVAILABLE</span>' : '<span class="productCard_notAvailable">NOT AVAILABLE</span>'}
+            ${product.status ? '<span class="productCard_available">DISPONIBLE</span>' : '<span class="productCard_notAvailable">SIN STOCK</span>'}
             <h3>${product.title}</h3>
             <img class="productCard_img" src = "../assets/images/store/${product.thumbnail}" alt="${product.title}"></img>
             <div class="productCard_info">
