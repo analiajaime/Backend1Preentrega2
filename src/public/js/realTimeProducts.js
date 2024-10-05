@@ -11,7 +11,7 @@ const renderProducts = (products) => {
     products.forEach(product => {
         const productCard = document.createElement("div")
         productCard.classList.add("productCard")
-        // Se renderiza cada card
+        // Se renderiza cada producto
         productCard.innerHTML = `
             ${product.status ? '<span class="productCard_available">DISPONIBLE</span>' : '<span class="productCard_notAvailable">SIN STOCK</span>'}
             <h3>${product.title}</h3>
@@ -20,7 +20,7 @@ const renderProducts = (products) => {
                 <div class="productCard_info_text">
                     <h4>Desde $${parseFloat(product.price).toFixed(2)}</h4>
                 </div>
-                <a id="scrollToForm"><button class="productCard_buttonHover" id="btn_update">Update</button></a>
+                <a id="scrollToForm"><button class="productCard_buttonHover" id="btn_update">Actualizar</button></a>
             </div>
             `
         containerProducts.appendChild(productCard)

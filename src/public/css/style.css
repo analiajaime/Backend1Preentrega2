@@ -339,7 +339,7 @@ header {
     width: 25rem;
     height: 35rem;
     overflow: hidden;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: var(--clr-product-card);
     box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
     transition: transform 500ms;
@@ -373,7 +373,7 @@ header {
 .productCard_img {
     width: 85%;
     height: 60%;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 .productCard_info {
@@ -425,7 +425,7 @@ header {
     width: 7rem;
     height: 3.4rem;
     background-color: var(--clr-blue);
-    border-radius: 2rem;
+    border-radius: 1rem;
     font-size: 1.5rem;
     color: var(--clr-main);
     cursor: pointer;
